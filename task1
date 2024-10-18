@@ -1,0 +1,19 @@
+#include <iostream>
+
+int main()
+{
+    int num;
+    std::cin >> num;
+
+    int firstDigit = (num / 100);
+    int secondDigit = (num / 10) % 10;
+    int thirdDigit = (num % 10);
+
+    std::cout << firstDigit << std::endl;
+    std::cout << secondDigit << std::endl;
+    std::cout << thirdDigit << std::endl;
+
+    int sum = firstDigit + secondDigit + thirdDigit;
+
+    std::cout << sum << std::endl;
+}
