@@ -1,0 +1,16 @@
+#include <iostream>
+
+int main()
+{
+    int a, b, c;
+    std::cin >> a >> b >> c;
+
+    bool isExistTriangle = false;
+
+    if (a + b > c || a + c > b || b + c > a)
+    {
+        isExistTriangle = true;
+    }
+
+    std::cout << std::boolalpha << isExistTriangle << std::endl;
+}
