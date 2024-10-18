@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main()
+{
+    int x, a, b;
+    bool isBelongInInterval = false;
+
+    std::cout << "type x" << std::endl;
+    std::cin >> x;
+
+    std::cout << "type interval" << std::endl;
+    std::cin >> a >> b;
+
+    if (x >= a && x <= b)
+    {
+        isBelongInInterval = true;
+    }
+
+    std::cout << std::boolalpha << isBelongInInterval << std::endl;
+}
