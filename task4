@@ -1,0 +1,20 @@
+#include <iostream>
+
+int main()
+{
+    int a, b; 
+    bool isEven = false;
+    std::cin >> a >> b;
+
+    int multiplysOfNums = a * b;
+    int lastDigit = multiplysOfNums % 10;
+
+    if (lastDigit % 2 == 0)
+    {
+        isEven = true;
+    }
+
+    std::cout << multiplysOfNums << " " << lastDigit << " " << isEven << std::endl;
+
+}
+
